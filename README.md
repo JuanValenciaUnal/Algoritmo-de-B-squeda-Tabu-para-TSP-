@@ -1,1 +1,1 @@
-# Algoritmo-de-B-squeda-Tabu-para-TSP-
+# Algoritmo-de-Busqueda-Tabu-para-TSP-
