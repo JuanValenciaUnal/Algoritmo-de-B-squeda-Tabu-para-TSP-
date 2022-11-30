@@ -24,6 +24,5 @@ def  tsp(grafo, tamano):
             actual_peso += grafo[k][tamano]
             k= j
         actual_peso += grafo[k][tamano]
-        min_path= min(min_path, actual_peso)
-        
+        min_path= min(min_path, actual_peso)        
     return min_path
