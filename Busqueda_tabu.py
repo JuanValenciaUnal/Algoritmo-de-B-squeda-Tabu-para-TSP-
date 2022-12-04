@@ -14,8 +14,8 @@ def incializar(pesos):
 def calcular_peso(camino,pesos):
     peso=0
     for i in range(len(camino)-1):        
-        peso=peso + pesos[camino[i]-1][camino[i]]
-        print(peso)
+        peso=peso + pesos[camino[i]-1][camino[i+1]-1]
+        print(peso," ",camino[i]-1," ",camino[i] )
     peso= peso + pesos[camino[-1]-1][camino[0]-1]
     return peso    
 
@@ -28,7 +28,7 @@ criterio_aspiracion = 100000
 
 
 #camino=incializar(pesos)
-camino=[2,1,3,4,5]
+camino=[1,2,3,4,5]
 print(camino)
 print(calcular_peso(camino, pesos))
 
